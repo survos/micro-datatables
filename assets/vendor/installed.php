@@ -14,4 +14,24 @@
     'path' => 'barecss/css/bare.min.css',
     'version' => '1.1.1',
   ),
+  'datatables.net' => 
+  array (
+    'path' => 'datatables.net',
+    'version' => '2.1.1',
+  ),
+  'jquery' => 
+  array (
+    'path' => 'jquery.js',
+    'version' => '3.7.1',
+  ),
+  'simple-datatables' => 
+  array (
+    'path' => 'simple-datatables.js',
+    'version' => '8.0.0',
+  ),
+  'simple-datatables/dist/column_filter.min.css' => 
+  array (
+    'path' => 'simple-datatables/dist/column_filter.min.css',
+    'version' => '8.0.0',
+  ),
 );

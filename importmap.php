@@ -31,4 +31,17 @@ return [
     '@symfony/stimulus-bundle' => [
         'path' => './vendor/symfony/stimulus-bundle/assets/dist/loader.js',
     ],
+    'datatables.net' => [
+        'version' => '2.1.1',
+    ],
+    'jquery' => [
+        'version' => '3.7.1',
+    ],
+    'simple-datatables' => [
+        'version' => '8.0.0',
+    ],
+    'simple-datatables/dist/column_filter.min.css' => [
+        'version' => '8.0.0',
+        'type' => 'css',
+    ],
 ];
