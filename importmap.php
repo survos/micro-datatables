@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Returns the importmap for this application.
+ * Returns the import map for this application.
  *
  * - "path" is a path inside the asset mapper system. Use the
  *     "debug:asset-map" command to see the full list of paths.
  *
- * - "entrypoint" (JavaScript only) set to true for any module that will
- *     be used as an the "entrypoint" (and passed to the importmap() Twig function).
+ * - "preload" set to true for any modules that are loaded on the initial
+ *     page load to help the browser download them earlier.
  *
  * The "importmap:require" command can be used to add new entries to this file.
  *
@@ -16,32 +16,26 @@
 return [
     'app' => [
         'path' => 'app.js',
-        'entrypoint' => true,
-    ],
-    '@hotwired/stimulus' => [
-        'version' => '3.2.2',
     ],
     'barecss' => [
-        'version' => '1.1.1',
+        'url' => 'https://cdn.jsdelivr.net/npm/barecss@1.1.1/+esm',
     ],
     'barecss/css/bare.min.css' => [
-        'version' => '1.1.1',
-        'type' => 'css',
+        'url' => 'https://cdn.jsdelivr.net/npm/barecss@1.1.1/css/bare.min.css/+esm',
     ],
     '@symfony/stimulus-bundle' => [
-        'path' => './vendor/symfony/stimulus-bundle/assets/dist/loader.js',
+        'path' => '@symfony/stimulus-bundle/loader.js',
     ],
-    'datatables.net' => [
-        'version' => '2.1.1',
+    'chart.js/auto' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/chart.js@3.9.1/auto/+esm',
     ],
-    'jquery' => [
-        'version' => '3.7.1',
+    '@hotwired/stimulus' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3.2.2/+esm',
     ],
     'simple-datatables' => [
-        'version' => '8.0.0',
+        'url' => 'https://cdn.jsdelivr.net/npm/simple-datatables@8.0.0/+esm',
     ],
-    'simple-datatables/dist/column_filter.min.css' => [
-        'version' => '8.0.0',
-        'type' => 'css',
+    'chartjs-plugin-zoom' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/+esm',
     ],
 ];

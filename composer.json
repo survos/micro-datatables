@@ -22,6 +22,7 @@
         "ext-simplexml": "*",
         "ext-xml": "*",
         "league/commonmark": "^2.4",
+        "survos/simple-datatables-bundle": "*@dev",
         "symfony/asset": "^6.3",
         "symfony/asset-mapper": "^6.3",
         "symfony/console": "^6.3",
@@ -32,8 +33,9 @@
         "symfony/intl": "^6.3",
         "symfony/monolog-bundle": "^3.8",
         "symfony/runtime": "^6.3",
-        "symfony/stimulus-bundle": "^2.12",
+        "symfony/stimulus-bundle": "2.x-dev",
         "symfony/twig-bundle": "^6.3",
+        "symfony/ux-chartjs": "2.x-dev",
         "symfony/validator": "^6.3",
         "symfony/web-link": "^6.3",
         "symfony/yaml": "^6.3",
@@ -48,6 +50,7 @@
         "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "^6.3",
         "symfony/css-selector": "^6.3",
+        "symfony/debug-bundle": "6.3.*",
         "symfony/phpunit-bridge": "^6.3",
         "symfony/stopwatch": "^6.4",
         "symfony/web-profiler-bundle": "^6.4"
@@ -88,7 +91,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "^6.4"
+            "require": "6.3.*"
         }
     },
     "scripts": {
@@ -108,5 +111,15 @@
     },
     "scripts-descriptions": {
         "app:test": "Run all PHPUnit tests"
+    },
+    "repositories": {
+        "simple-datatables": {
+            "type": "path",
+            "url": "../survos/packages/simple-datatables-bundle"
+        },
+        "grid": {
+            "type": "path",
+            "url": "../survos/packages/grid-bundle"
+        }
     }
 }

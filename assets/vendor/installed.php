@@ -34,4 +34,19 @@
     'path' => 'simple-datatables/dist/column_filter.min.css',
     'version' => '8.0.0',
   ),
+  'datatables' => 
+  array (
+    'path' => 'datatables.js',
+    'version' => '1.10.18',
+  ),
+  'datatables/media/css/jquery.dataTables.min.css' => 
+  array (
+    'path' => 'datatables/media/css/jquery.dataTables.min.css',
+    'version' => '1.10.18',
+  ),
+  'lodash' => 
+  array (
+    'path' => 'lodash.js',
+    'version' => '4.17.21',
+  ),
 );
