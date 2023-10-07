@@ -115,10 +115,6 @@
         "simple-datatables": {
             "type": "path",
             "url": "../survos/packages/simple-datatables-bundle"
-        },
-        "grid": {
-            "type": "path",
-            "url": "../survos/packages/grid-bundle"
         }
     }
 }
