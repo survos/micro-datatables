@@ -23,9 +23,6 @@
             "phpstan.dist.neon"
         ]
     },
-    "survos/simple-datatables-bundle": {
-        "version": "dev-main"
-    },
     "symfony/asset-mapper": {
         "version": "6.3",
         "recipe": {
@@ -164,9 +161,6 @@
         ]
     },
     "symfony/ux-chartjs": {
-        "version": "2.x-dev"
-    },
-    "symfony/ux-twig-component": {
         "version": "2.x-dev"
     },
     "symfony/validator": {

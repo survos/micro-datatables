@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d0daf2287614bb3d0c3344898737885",
+    "content-hash": "d50fe3bee979626e4fd464f380fd9789",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -789,74 +789,6 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
-        },
-        {
-            "name": "survos/simple-datatables-bundle",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../survos/packages/simple-datatables-bundle",
-                "reference": "c3d70f97d9b1d5f8443aab03d7b350d6388bae8d"
-            },
-            "require": {
-                "php": "^8.1",
-                "symfony/config": "^6.1.0",
-                "symfony/dependency-injection": "^6.1.0",
-                "symfony/http-kernel": "^6.1.0",
-                "symfony/options-resolver": "^6.1.0",
-                "symfony/stimulus-bundle": "^2.12",
-                "symfony/ux-twig-component": "^2.9",
-                "twig/twig": "^3.4"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.8",
-                "roave/security-advisories": "dev-latest",
-                "symfony/browser-kit": "^6.1.0",
-                "symfony/framework-bundle": "^6.1.0",
-                "symfony/phpunit-bridge": "^6.1.0",
-                "symfony/twig-bundle": "^6.1.0",
-                "symfony/var-dumper": "^6.1.0"
-            },
-            "suggest": {
-                "monolog/monolog": "Allows more advanced logging of the application flow",
-                "survos/api-grid-bundle": "For javascript-based grid rendering"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.6-dev"
-                },
-                "symfony": {
-                    "require": "^6.1.0"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Survos\\SimpleDatatables\\": "src/"
-                }
-            },
-            "scripts": {
-                "phpstan": [
-                    "vendor/bin/phpstan analyse"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tac Tacelosky",
-                    "email": "tacman@gmail.com"
-                }
-            ],
-            "description": "incorporate , using twig and stimulus, twig_component requires ^2.3",
-            "keywords": [
-                "symfony-ux",
-                "symfony6"
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "symfony/asset",
@@ -2001,12 +1933,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "0f9ad8600c1021983d096512066ee54332aa3139"
+                "reference": "1fa2ae7be8b5b01534a9062040f4e46badcf76e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/0f9ad8600c1021983d096512066ee54332aa3139",
-                "reference": "0f9ad8600c1021983d096512066ee54332aa3139",
+                "url": "https://api.github.com/repos/symfony/form/zipball/1fa2ae7be8b5b01534a9062040f4e46badcf76e8",
+                "reference": "1fa2ae7be8b5b01534a9062040f4e46badcf76e8",
                 "shasum": ""
             },
             "require": {
@@ -2075,7 +2007,7 @@
             "description": "Allows to easily create, process and reuse HTML forms",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/form/tree/v6.3.5"
+                "source": "https://github.com/symfony/form/tree/6.3"
             },
             "funding": [
                 {
@@ -2091,7 +2023,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-10T17:47:23+00:00"
+            "time": "2023-10-07T07:32:05+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -2244,12 +2176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "213e564da4cbf61acc9728d97e666bcdb868c10d"
+                "reference": "ab8446f997efb9913627e9da10fa784d2182fe92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/213e564da4cbf61acc9728d97e666bcdb868c10d",
-                "reference": "213e564da4cbf61acc9728d97e666bcdb868c10d",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/ab8446f997efb9913627e9da10fa784d2182fe92",
+                "reference": "ab8446f997efb9913627e9da10fa784d2182fe92",
                 "shasum": ""
             },
             "require": {
@@ -2313,7 +2245,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v6.3.5"
+                "source": "https://github.com/symfony/http-client/tree/6.3"
             },
             "funding": [
                 {
@@ -2329,7 +2261,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-29T15:57:12+00:00"
+            "time": "2023-10-06T10:08:56+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -4255,102 +4187,17 @@
             "time": "2023-10-03T15:17:20+00:00"
         },
         {
-            "name": "symfony/ux-twig-component",
-            "version": "2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/ux-twig-component.git",
-                "reference": "89c6ab65e2226f5e7d60f7641a971dd2caa40265"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ux-twig-component/zipball/89c6ab65e2226f5e7d60f7641a971dd2caa40265",
-                "reference": "89c6ab65e2226f5e7d60f7641a971dd2caa40265",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
-                "symfony/deprecation-contracts": "^2.2|^3.0",
-                "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
-                "symfony/property-access": "^5.4|^6.0|^7.0",
-                "twig/twig": "^2.14.7|^3.0.4"
-            },
-            "conflict": {
-                "symfony/config": "<5.4.0"
-            },
-            "require-dev": {
-                "symfony/console": "^5.4|^6.0|^7.0",
-                "symfony/css-selector": "^5.4|^6.0|^7.0",
-                "symfony/dom-crawler": "^5.4|^6.0|^7.0",
-                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
-                "symfony/phpunit-bridge": "^6.0|^7.0",
-                "symfony/stimulus-bundle": "^2.9.1",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0",
-                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
-                "symfony/webpack-encore-bundle": "^1.15"
-            },
-            "default-branch": true,
-            "type": "symfony-bundle",
-            "extra": {
-                "thanks": {
-                    "name": "symfony/ux",
-                    "url": "https://github.com/symfony/ux"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\UX\\TwigComponent\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Twig components for Symfony",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "components",
-                "symfony-ux",
-                "twig"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/ux-twig-component/tree/2.x"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-10-04T07:10:16+00:00"
-        },
-        {
             "name": "symfony/validator",
             "version": "6.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "48e815ba3b5eb72e632588dbf7ea2dc4e608ee47"
+                "reference": "7c3c38e7b24fe50393d85ee878cf812cc0384e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/48e815ba3b5eb72e632588dbf7ea2dc4e608ee47",
-                "reference": "48e815ba3b5eb72e632588dbf7ea2dc4e608ee47",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/7c3c38e7b24fe50393d85ee878cf812cc0384e92",
+                "reference": "7c3c38e7b24fe50393d85ee878cf812cc0384e92",
                 "shasum": ""
             },
             "require": {
@@ -4418,7 +4265,7 @@
             "description": "Provides tools to validate values",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/validator/tree/v6.3.5"
+                "source": "https://github.com/symfony/validator/tree/6.3"
             },
             "funding": [
                 {
@@ -4434,7 +4281,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-29T07:41:15+00:00"
+            "time": "2023-10-07T07:32:05+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -5402,12 +5249,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "15352e310331ae1b558db7ed210c7a47caaa09c3"
+                "reference": "d6443fad3e8aec3577fd7c1af6c21b9c4fee04f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/15352e310331ae1b558db7ed210c7a47caaa09c3",
-                "reference": "15352e310331ae1b558db7ed210c7a47caaa09c3",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d6443fad3e8aec3577fd7c1af6c21b9c4fee04f4",
+                "reference": "d6443fad3e8aec3577fd7c1af6c21b9c4fee04f4",
                 "shasum": ""
             },
             "require": {
@@ -5457,7 +5304,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-06T19:54:26+00:00"
+            "time": "2023-10-07T11:31:03+00:00"
         },
         {
             "name": "phpstan/phpstan-symfony",
@@ -6849,7 +6696,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "survos/simple-datatables-bundle": 20,
         "symfony/stimulus-bundle": 20,
         "symfony/ux-chartjs": 20,
         "roave/security-advisories": 20
