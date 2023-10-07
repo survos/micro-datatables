@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="module">
+        // import DataTable from 'datatables.net';
+
+    </script>
+{% endblock %}
+{% block body %}
+
+    {{ render_chart(chart, {'class': 'my-chart'}) }}
+
+
+{% endblock %}

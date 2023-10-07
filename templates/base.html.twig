@@ -12,9 +12,11 @@
 
         {% block stylesheets %}
             {{ ux_controller_link_tags() }}
+            {# @todo: move to lazy-load local #}
+            <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
             <link rel="stylesheet" href="{{ asset('vendor/barecss/css/bare.min.css') }}">
             <link rel="stylesheet" href="{{ asset('vendor/barecss/css/style.min.css') }}">
-            <link href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+{#            <link href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />#}
             <link rel="stylesheet" href="{{ asset('styles/app.css') }}"/>
         {% endblock %}
 
@@ -41,6 +43,7 @@
                         <a>Menu</a>
                         <menu>
                             <menuitem><a href="{{ path('app_home') }}">Home (README.md)</a></menuitem>
+                            <menuitem><a href="{{ path('app_chart') }}">ChartJS</a></menuitem>
                             <menuitem><a href="{{ path('app_stimulus') }}">JavaScript with stimulus</a></menuitem>
                             <menuitem><a href="{{ path('app_composer') }}">The <code>composer.json</code> file</a></menuitem>
                             <menuitem><a href="{{ path('app_form') }}">Form example</a></menuitem>
