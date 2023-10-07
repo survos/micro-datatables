@@ -17,17 +17,17 @@ return [
     'app' => [
         'path' => 'app.js',
     ],
+    '@symfony/stimulus-bundle' => [
+        'path' => '@symfony/stimulus-bundle/loader.js',
+    ],
     'barecss' => [
         'url' => 'https://cdn.jsdelivr.net/npm/barecss@1.1.1/+esm',
     ],
     'barecss/css/bare.min.css' => [
         'url' => 'https://cdn.jsdelivr.net/npm/barecss@1.1.1/css/bare.min.css/+esm',
     ],
-    '@symfony/stimulus-bundle' => [
-        'path' => '@symfony/stimulus-bundle/loader.js',
-    ],
     'chart.js/auto' => [
-        'url' => 'https://cdn.jsdelivr.net/npm/chart.js@3.9.1/auto/+esm',
+        'url' => 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/auto/+esm',
     ],
     '@hotwired/stimulus' => [
         'url' => 'https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3.2.2/+esm',
