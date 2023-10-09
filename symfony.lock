@@ -23,6 +23,9 @@
             "phpstan.dist.neon"
         ]
     },
+    "survos/ux-simple-datatables": {
+        "version": "dev-main"
+    },
     "symfony/asset-mapper": {
         "version": "6.3",
         "recipe": {

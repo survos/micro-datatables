@@ -16,6 +16,7 @@
 return [
     'app' => [
         'path' => 'app.js',
+        'entrypoint' => true
     ],
     '@symfony/stimulus-bundle' => [
         'path' => '@symfony/stimulus-bundle/loader.js',
@@ -37,5 +38,8 @@ return [
     ],
     'chartjs-plugin-zoom' => [
         'url' => 'https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/+esm',
+    ],
+    'simple-datatables/dist/style.css' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/simple-datatables@8.0.0/dist/style.css/+esm',
     ],
 ];

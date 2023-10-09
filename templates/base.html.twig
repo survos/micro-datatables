@@ -13,14 +13,15 @@
         {% block stylesheets %}
             {{ ux_controller_link_tags() }}
             {# @todo: move to lazy-load local #}
+{#            <link rel="stylesheet" href="{{ asset('simple-datatables/dist/style.css') }}">#}
             <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
             <link rel="stylesheet" href="{{ asset('vendor/barecss/css/bare.min.css') }}">
             <link rel="stylesheet" href="{{ asset('vendor/barecss/css/style.min.css') }}">
-{#            <link href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />#}
             <link rel="stylesheet" href="{{ asset('styles/app.css') }}"/>
         {% endblock %}
 
         {% block javascripts %}
+
             {{ importmap() }}
         {% endblock %}
     </head>

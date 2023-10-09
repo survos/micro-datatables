@@ -51,8 +51,8 @@
         "symfony/css-selector": "^6.3",
         "symfony/debug-bundle": "6.3.*",
         "symfony/phpunit-bridge": "^6.3",
-        "symfony/stopwatch": "^6.4",
-        "symfony/web-profiler-bundle": "^6.4"
+        "symfony/stopwatch": "^6.3",
+        "symfony/web-profiler-bundle": "^6.3"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
@@ -66,7 +66,7 @@
     "conflict": {
         "symfony/symfony": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": false,
     "autoload": {
         "psr-4": {
@@ -90,7 +90,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.3.*"
+            "require": "^6.3"
         }
     },
     "scripts": {
