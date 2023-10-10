@@ -5,6 +5,12 @@
                 "enabled": true,
                 "fetch": "eager"
             }
+        },
+        "@survos/simple-datatables": {
+            "sdt": {
+                "enabled": true,
+                "fetch": "eager"
+            }
         }
     },
     "entrypoints": []

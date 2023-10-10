@@ -5,13 +5,25 @@
         <h2>Composer ⚡</h2>
     </div>
 
-    <p>
-        Check-out the <a target="_blank" att="" href="https://packagist.org/packages/strangebuzz/microsymfony">package homepage on packagist.org.</a>
-    </p>
+    {% for composerKey in ['require','require-dev'] %}
+        <h3>{{ composerKey }}</h3>
+        <table {{ stimulus_controller('@survos/simple-datatables/sdt') }}>
+            <thead>
+            <tr>
+                <th>Package</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% set data = composerData[composerKey] %}
+            {% for key, value in data  %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+            {% endfor %}
 
-    <p>
-        The current <code>composer.json</code> file:
-    </p>
-
-    <pre><code>{{ composer }}</code></pre>
+            </tbody>
+        </table>
+    {% endfor %}
 {% endblock %}

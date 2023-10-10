@@ -1,9 +1,4 @@
 <?php return array (
-  '@hotwired/stimulus' => 
-  array (
-    'path' => '@hotwired/stimulus.js',
-    'version' => '3.2.2',
-  ),
   'barecss' => 
   array (
     'path' => 'barecss.js',
@@ -14,39 +9,44 @@
     'path' => 'barecss/css/bare.min.css',
     'version' => '1.1.1',
   ),
-  'datatables.net' => 
+  'chart.js/auto' => 
   array (
-    'path' => 'datatables.net',
-    'version' => '2.1.1',
+    'path' => 'chart.js/auto.js',
+    'version' => '4.4.0',
   ),
-  'jquery' => 
+  '@hotwired/stimulus' => 
   array (
-    'path' => 'jquery.js',
-    'version' => '3.7.1',
+    'path' => '@hotwired/stimulus.js',
+    'version' => '3.2.2',
   ),
   'simple-datatables' => 
   array (
     'path' => 'simple-datatables.js',
     'version' => '8.0.0',
   ),
+  'chartjs-plugin-zoom' => 
+  array (
+    'path' => 'chartjs-plugin-zoom.js',
+    'version' => '2.0.1',
+  ),
+  'simple-datatables/dist/style.css' => 
+  array (
+    'path' => 'simple-datatables/dist/style.css',
+    'version' => '8.0.0',
+  ),
+  '@kurkle/color' => 
+  array (
+    'path' => '@kurkle/color.js',
+    'version' => '0.3.2',
+  ),
+  'hammerjs' => 
+  array (
+    'path' => 'hammerjs.js',
+    'version' => '2.0.8',
+  ),
   'simple-datatables/dist/column_filter.min.css' => 
   array (
     'path' => 'simple-datatables/dist/column_filter.min.css',
     'version' => '8.0.0',
-  ),
-  'datatables' => 
-  array (
-    'path' => 'datatables.js',
-    'version' => '1.10.18',
-  ),
-  'datatables/media/css/jquery.dataTables.min.css' => 
-  array (
-    'path' => 'datatables/media/css/jquery.dataTables.min.css',
-    'version' => '1.10.18',
-  ),
-  'lodash' => 
-  array (
-    'path' => 'lodash.js',
-    'version' => '4.17.21',
   ),
 );

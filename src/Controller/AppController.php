@@ -94,8 +94,10 @@ final class AppController extends AbstractController
     public function composer(): Response
     {
         $composer = file_get_contents(__DIR__.'/../../composer.json');
+        $composerData = json_decode($composer, true);
 
-        return $this->render('composer.html.twig', compact('composer'));
+
+        return $this->render('composer.html.twig', compact('composerData'));
     }
 
     /**
