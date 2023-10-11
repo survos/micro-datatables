@@ -43,9 +43,10 @@ final class AppController extends AbstractController
         return $this->render('home.html.twig', compact('importMapData', 'readme'));
     }
 
-    #[Route(path: '/', name: 'home')]
-    public function home(): Response
+    #[Route(path: '/container', name: 'container')]
+    public function container(): Response
     {
+
         $readme = file_get_contents(__DIR__.'/../../README.md');
         $importMapData = $this->getImportMapData();
 
