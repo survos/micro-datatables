@@ -9,11 +9,6 @@
     'path' => 'barecss/css/bare.min.css',
     'version' => '1.1.1',
   ),
-  'chart.js/auto' => 
-  array (
-    'path' => 'chart.js/auto.js',
-    'version' => '4.4.0',
-  ),
   '@hotwired/stimulus' => 
   array (
     'path' => '@hotwired/stimulus.js',
@@ -24,6 +19,11 @@
     'path' => 'simple-datatables.js',
     'version' => '8.0.0',
   ),
+  'chart.js/auto' => 
+  array (
+    'path' => 'chart.js/auto.js',
+    'version' => '4.4.0',
+  ),
   'chartjs-plugin-zoom' => 
   array (
     'path' => 'chartjs-plugin-zoom.js',
@@ -32,21 +32,6 @@
   'simple-datatables/dist/style.css' => 
   array (
     'path' => 'simple-datatables/dist/style.css',
-    'version' => '8.0.0',
-  ),
-  '@kurkle/color' => 
-  array (
-    'path' => '@kurkle/color.js',
-    'version' => '0.3.2',
-  ),
-  'hammerjs' => 
-  array (
-    'path' => 'hammerjs.js',
-    'version' => '2.0.8',
-  ),
-  'simple-datatables/dist/column_filter.min.css' => 
-  array (
-    'path' => 'simple-datatables/dist/column_filter.min.css',
     'version' => '8.0.0',
   ),
 );

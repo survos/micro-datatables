@@ -7,14 +7,19 @@ namespace App\Controller;
 use App\Dto\RegisterFormDto;
 use App\Form\Type\RegisterForm;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\AsController;
+use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\UX\Chartjs\Builder\ChartBuilderInterface;
 use Symfony\UX\Chartjs\Model\Chart;
+use Symfony\Bundle\FrameworkBundle\Console\Application;
+use function Symfony\Component\String\u;
 
 /**
  * @see AppControllerTest
@@ -23,7 +28,10 @@ use Symfony\UX\Chartjs\Model\Chart;
 #[Route(name: 'app_')]
 final class AppController extends AbstractController
 {
-    public function __construct(private ParameterBagInterface $bag) {
+    public function __construct(
+        private ParameterBagInterface $bag,
+        private KernelInterface $kernel
+    ) {
 
     }
     private function getImportMapData(): array
@@ -44,13 +52,46 @@ final class AppController extends AbstractController
     }
 
     #[Route(path: '/container', name: 'container')]
-    public function container(): Response
+    public function container(Request $request): Response
     {
+        $data = $this->runCommand('debug:container');
 
         $readme = file_get_contents(__DIR__.'/../../README.md');
         $importMapData = $this->getImportMapData();
+        $perPage = $request->get('perPage', 15);
 
-        return $this->render('home.html.twig', compact('importMapData', 'readme'));
+        return $this->render('container.html.twig', compact('perPage', 'data'));
+    }
+
+    public function runCommand(string $command): array
+    {
+        $application = new Application($this->kernel);
+        $application->setAutoExit(false);
+
+        $input = new ArrayInput([
+            'command' => $command,
+            // (optional) define the value of command arguments
+//            'fooArgument' => 'barValue',
+            // (optional) pass options to the command
+            '--format' => 'json',
+            // (optional) pass options without value
+//            '--baz' => true,
+        ]);
+
+        // You can use NullOutput() if you don't need the output
+        $output = new BufferedOutput();
+        $application->run($input, $output);
+
+        // return the output, don't use if you used NullOutput()
+        $content = $output->fetch();
+//        if (!$content) dd($input);
+        // hack that removes the comments
+        $content = '{' . u($content)->after("]\n{")->toString();
+        $content = u($content)->before('//')->toString();
+//        dump($content);
+        assert(json_validate($content), $content);
+        $data = json_decode($content, true);
+        return $data;
     }
 
     #[Route('/chart', name: 'chart')]

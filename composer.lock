@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8085e23b809c3b03c6dfd56a7232deee",
+    "content-hash": "7de78eaafa88c78e599ad6e50ad9cf18",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -778,16 +778,16 @@
         },
         {
             "name": "survos/simple-datatables-bundle",
-            "version": "dev-main",
+            "version": "1.5.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/SurvosSimpleDatatablesBundle.git",
-                "reference": "303933f50b0bb78d90ce6cdfc8092293f0c4899d"
+                "reference": "060280ef16799b44ea27a4ec0d165aa456412d70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/survos/SurvosSimpleDatatablesBundle/zipball/303933f50b0bb78d90ce6cdfc8092293f0c4899d",
-                "reference": "303933f50b0bb78d90ce6cdfc8092293f0c4899d",
+                "url": "https://api.github.com/repos/survos/SurvosSimpleDatatablesBundle/zipball/060280ef16799b44ea27a4ec0d165aa456412d70",
+                "reference": "060280ef16799b44ea27a4ec0d165aa456412d70",
                 "shasum": ""
             },
             "require": {
@@ -812,7 +812,6 @@
             "suggest": {
                 "monolog/monolog": "Allows more advanced logging of the application flow"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -844,9 +843,9 @@
             ],
             "support": {
                 "issues": "https://github.com/survos/SurvosSimpleDatatablesBundle/issues",
-                "source": "https://github.com/survos/SurvosSimpleDatatablesBundle/tree/1.5.39"
+                "source": "https://github.com/survos/SurvosSimpleDatatablesBundle/tree/1.5.40"
             },
-            "time": "2023-10-11T00:30:06+00:00"
+            "time": "2023-10-11T11:30:22+00:00"
         },
         {
             "name": "symfony/asset",
@@ -7019,7 +7018,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "survos/simple-datatables-bundle": 20,
         "symfony/stimulus-bundle": 20,
         "roave/security-advisories": 20
     },

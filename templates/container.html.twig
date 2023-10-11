@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% set _sc = '@survos/simple-datatables-bundle/table' %}
+
+{#    {{ dump(data) }}#}
+
+    <table class="table" {{ stimulus_controller(_sc, {perPage: perPage}) }}>
+        <thead>
+        <tr>
+            <th>Package</th>
+            <th data-searchable="false">Visibility</th>
+            <th>Service</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for key, info in data.aliases %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ info.public ? 'public' : 'private' }}</td>
+            <td>{{ info.service }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+
+{% endblock %}
