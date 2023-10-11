@@ -43,6 +43,15 @@ final class AppController extends AbstractController
         return $this->render('home.html.twig', compact('importMapData', 'readme'));
     }
 
+    #[Route(path: '/', name: 'home')]
+    public function home(): Response
+    {
+        $readme = file_get_contents(__DIR__.'/../../README.md');
+        $importMapData = $this->getImportMapData();
+
+        return $this->render('home.html.twig', compact('importMapData', 'readme'));
+    }
+
     #[Route('/chart', name: 'chart')]
     public function chart(ChartBuilderInterface $chartBuilder): Response
     {
@@ -88,7 +97,7 @@ final class AppController extends AbstractController
     }
 
     /**
-     * Displays the composer.json file.
+     * Displays requires from the composer.json file.
      */
     #[Route(path: '/composer', name: 'composer')]
     public function composer(): Response

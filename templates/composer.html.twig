@@ -7,7 +7,8 @@
 
     {% for composerKey in ['require','require-dev'] %}
         <h3>{{ composerKey }}</h3>
-        <table {{ stimulus_controller('@survos/simple-datatables/sdt') }}>
+        <div {{ stimulus_controller('hello') }}>Hello!</div>
+        <table {{ stimulus_controller('@survos/simple-datatables-bundle/table') }}>
             <thead>
             <tr>
                 <th>Package</th>

@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block javascripts %}
-    {{ parent() }}
-    <script type="module">
-        import {DataTable} from "simple-datatables"
+{#{% block javascripts %}#}
+{#    {{ parent() }}#}
+{#    <script type="module">#}
+{#        import {DataTable} from "simple-datatables"#}
 
-        const myTable = document.querySelector("#example");
-        const dataTable = new DataTable(myTable, {
-            searchable: false,
-            fixedHeight: true,
-        });
-    </script>
-{% endblock %}
+{#        const myTable = document.querySelector("#example");#}
+{#        const dataTable = new DataTable(myTable, {#}
+{#            searchable: false,#}
+{#            fixedHeight: true,#}
+{#        });#}
+{#    </script>#}
+{#{% endblock %}#}
 {% block body %}
     {% set _sc = '@survos/simple-datatables-bundle/simple_datatables' %}
     <table id="example" class="table" {{ stimulus_controller(_sc) }}>
