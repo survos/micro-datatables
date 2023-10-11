@@ -16,7 +16,6 @@
 return [
     'app' => [
         'path' => 'app.js',
-        'entrypoint' => true
     ],
     '@symfony/stimulus-bundle' => [
         'path' => '@symfony/stimulus-bundle/loader.js',
@@ -41,5 +40,8 @@ return [
     ],
     'simple-datatables/dist/style.css' => [
         'url' => 'https://cdn.jsdelivr.net/npm/simple-datatables@8.0.0/dist/style.css/+esm',
+    ],
+    'bootstrap' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/+esm',
     ],
 ];

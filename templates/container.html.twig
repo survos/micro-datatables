@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    {% set _sc = '@survos/simple-datatables-bundle/table' %}
+    {% set _sc = '@survos/simple-datatables-bundle/tablex' %}
 
 {#    {{ dump(data) }}#}
 
@@ -16,7 +16,7 @@
 
         <tbody>
         {% for key, info in data.aliases %}
-        <tr>
+        <tr class="{{ info.public ? 'table-primary': 'table-warning' }}">
             <td>{{ key }}</td>
             <td>{{ info.public ? 'public' : 'private' }}</td>
             <td>{{ info.service }}</td>
