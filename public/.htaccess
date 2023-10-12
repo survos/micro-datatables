@@ -1,0 +1,18 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Set the base directory to the "public" folder
+# RewriteBase /
+
+# # Exclude the "assets" folder from rewriting
+
+# Rewrite all other requests to the "public" folder's index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Protect the .htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
